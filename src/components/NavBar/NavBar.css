@@ -1,0 +1,23 @@
+.List{
+    display: flex;
+    list-style: none;
+    
+}
+
+.List li{
+    margin-left: 25px;
+}
+
+
+.active{
+    color: whitesmoke;
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.inactive{
+    color:black;
+    font-size: 19px;
+    font-weight: bolder;
+    text-decoration: none;
+}

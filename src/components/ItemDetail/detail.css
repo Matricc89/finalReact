@@ -1,0 +1,44 @@
+.detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: center;
+}
+
+.agregar {
+    background-color: cadetblue;
+    width: 100px;
+    height: 46px;
+    
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.detail2{
+    margin-left: 25px;
+}
+
+.check{
+    background-color: greenyellow;
+    color: rgb(83, 76, 76);
+    font-size: 20px;
+    width: 100px;
+    height: 46px;
+    
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.continuar{
+    background-color: blue;
+    color: rgb(236, 224, 224);
+    font-size: 20px;
+    width: 100px;
+    height: 46px;
+    
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}

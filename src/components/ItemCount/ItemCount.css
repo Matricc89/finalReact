@@ -1,0 +1,29 @@
+.counter{
+    font-size: 25px;
+    margin-top: 15px;
+}
+.control{
+    display: flex;
+    
+    
+}
+.control button{
+    font-size: 37px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 36px;
+    color:azure;
+    background-color: brown;
+    padding-bottom: 2px;
+    margin-bottom: 15px;
+    
+    
+}
+
+.counter span{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+    
+    font-weight: bolder;
+}

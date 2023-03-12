@@ -1,0 +1,48 @@
+export const products = [
+    {
+      id: 1,
+      name: "Nicole",
+      description: "Base 100% artesanal",
+      price: "55 USD",
+      stock: 50,
+      category: "zapatos",
+      img:'/tienda/zapato1.jpg',
+    },
+    {
+      id: 2,
+      name: "Sharon",
+      description: "Cuero 100% Vacuno",
+      price: "90 USD",
+      stock: 50,
+      category: "botas",
+      img:"/tienda/bota1.jpg",
+    },
+    {
+      id: 3,
+      name: "Clotilda",
+      description: "Base 100% artesanal",
+      price: "87 USD",
+      stock: 50,
+      category: "borcegos",
+      img:"/tienda/borcego1.jpg",
+    },
+    {
+      id: 4,
+      name: "Matilda",
+      description: "Base sintetica",
+      price: "140 USD",
+      stock: 50,
+      category: "zapatos",
+      img:"/tienda/zapato2.jpg",
+    },
+    {
+      id: 5,
+      name: "Finlandia",
+      description: "Cuero 100% Vacuno",
+      price: "111 USD",
+      stock: 50,
+      category: "botas",
+      img:"/tienda/bota2.jpg",
+    },
+    
+  ];
