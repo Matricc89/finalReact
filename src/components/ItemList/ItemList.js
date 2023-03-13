@@ -1,5 +1,5 @@
 import './ItemList.css';
-// import { products } from "../data/products"
+
 import Item from "../Item/Item"
 import { Link } from 'react-router-dom';
 

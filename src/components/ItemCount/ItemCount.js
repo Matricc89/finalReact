@@ -16,11 +16,11 @@ const ItemCount = ({count, setCount}) => {
   return (
     <div className='counter'>
        <div className='control'>
-           <button onClick={restar}>-</button>
+           <button disabled={count === 0} onClick={restar}>-</button>
            <div>
                <span>{count}</span>
            </div>
-           <button onClick={onAdd}>+</button>
+           <button  onClick={onAdd}>+</button>
 
        </div>
     </div>
