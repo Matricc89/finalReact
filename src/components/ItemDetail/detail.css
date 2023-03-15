@@ -5,6 +5,8 @@
     justify-content: space-around;
     align-content: space-around;
     align-items: center;
+    background-color: rgba(0, 255, 255, 0.26);
+    padding: 15px 15px;
 }
 
 .agregar {

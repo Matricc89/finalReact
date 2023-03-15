@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import logo from './components/img/logo.png';
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
+import Footer from './components/Footer/Footer';
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './pages/ItemListContainer/ItemListContainer';
 import Cart from './pages/Cart/Cart';
@@ -25,8 +26,10 @@ function App() {
           <Route path="/category/:categoryId" element={<ItemListContainer />} />
           <Route path='/cart' element={<Cart />} />
         </Routes>
+        <Footer/>
       </CartProvider>
     </BrowserRouter>
+    
   );
 }
 
