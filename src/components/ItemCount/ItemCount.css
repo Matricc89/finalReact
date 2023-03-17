@@ -15,8 +15,15 @@
     padding: 5px;
     border-radius: 20px;
     font-size: 18px;
-    background-color: rgba(0, 0, 255, 0.616);
+    background-color: rgb(255, 0, 85);
+    color: white;
+    cursor: pointer;
 }
+.control button:hover {
+    background-color: rgba(255, 0, 85, 0.699);
+    color: #fff;
+}
+  
 
 .counter span {
     margin-left: 10px;

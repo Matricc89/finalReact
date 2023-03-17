@@ -14,7 +14,9 @@
 }
 
 .item{
-    border: 1px solid;
+    padding-bottom: 5px;
+    background-color:rgba(255, 0, 119, 0.404) ;
+    border: 1px solid rgba(255, 0, 179, 0.226);
     margin-top: 15px;
     margin-bottom: 15px;
 }

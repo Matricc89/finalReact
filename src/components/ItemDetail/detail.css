@@ -10,21 +10,23 @@
 }
 
 .agregar {
-    background-color: cadetblue;
+    background-color: rgb(3, 134, 42);
     width: 100px;
     height: 46px;
-    
     margin-left: -104px;
     border-radius: 5px;
     cursor: pointer;
+}
+.agregar:hover {
+    background-color: rgba(29, 155, 4, 0.719);
 }
 .detail2{
     margin-left: 25px;
 }
 
 .check{
-    background-color: greenyellow;
-    color: rgb(83, 76, 76);
+    background-color: blue;
+    color:white;
     font-size: 20px;
     width: 100px;
     height: 46px;
@@ -32,6 +34,9 @@
     margin-left: 5px;
     border-radius: 5px;
     cursor: pointer;
+}
+.check:hover {
+    background-color: rgba(0, 0, 255, 0.397);
 }
 .continuar{
     background-color: blue;
@@ -43,4 +48,7 @@
     margin-left: 5px;
     border-radius: 5px;
     cursor: pointer;
+}
+.continuar:hover {
+    background-color: rgba(0, 0, 255, 0.397);
 }

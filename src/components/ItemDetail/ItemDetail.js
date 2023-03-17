@@ -12,15 +12,15 @@ const AddToCartButton = ({ detail, count, onAddToCart }) => {
     Swal.fire({
       text: `Has agregado ${count} ${detail.title} al carrito.`,
       icon: 'success',
-      timer: 1000, 
-      showConfirmButton: false 
+      timer: 1000,
+      showConfirmButton: false
     }).then(() => {
       onAddToCart();
     });
-    
-    
-    
-    
+
+
+
+
   };
 
   return (
@@ -41,7 +41,7 @@ const ItemDetail = ({ detail }) => {
 
   const handleAddToCart = () => {
     addItem(detail, count);
-    
+
   };
 
   return (
@@ -58,7 +58,11 @@ const ItemDetail = ({ detail }) => {
         <button className='continuar' onClick={() => navigate('/')}>
           Continuar
         </button>
-        <button className='check' onClick={() => navigate('/cart')}>
+        <button
+          className='check'
+          onClick={() => navigate('/cart')}
+          disabled={addItem.length === 0}
+        >
           Finalizar
         </button>
       </div>
@@ -66,4 +70,4 @@ const ItemDetail = ({ detail }) => {
   );
 };
 
-export default ItemDetail;
+export default ItemDetail

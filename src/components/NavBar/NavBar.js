@@ -12,7 +12,7 @@ export default function NavBar() {
         <nav>
             <ul className="List">
                 <li>
-                    <NavLink className={({isActive}) => isActive ? 'active' : 'inactive'} to="/">Inicio</NavLink>
+                    <NavLink className={({isActive}) => isActive ? 'active' : 'inactive'} to="/">Todos los Productos</NavLink>
                 </li>
                 <li>
                     <NavLink className={({isActive}) => isActive ? 'active' : 'inactive'} to="/category/zapatos">Zapatos</NavLink>
