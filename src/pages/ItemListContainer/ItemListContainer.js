@@ -7,49 +7,21 @@ import { getFirestore, getDocs, collection, query, where } from 'firebase/firest
 
 
 const ItemListContainer = () => {
-
     const [productList, setProductList] = useState([]);
     const { categoryId } = useParams();
 
-
-
-
     const getProducts = () => {
         const db = getFirestore();
-        const querySnapshot = collection(db, 'products')
-        if (categoryId) {
-            const filterQuery = query(querySnapshot, where('category', '==', categoryId))
-            getDocs(filterQuery)
-                .then((response) => {
-                    const list = response.docs.map((doc) => {
-                        return {
-                            id: doc.id,
-                            ...doc.data()
-                        }
-                    })
-                    setProductList(list)
-                })
-                .catch((error) => console.log(error))
-        }else{
-            getDocs(querySnapshot)
-            .then((response) => {
-                const list = response.docs.map((doc) => {
-                    return {
-                        id: doc.id,
-                        ...doc.data()
-                    }
-                })
-                setProductList(list)
-            })
+        const productsCollection = collection(db, 'products');
+        const productsQuery = categoryId ? query(productsCollection, where('category', '==', categoryId)) : productsCollection;
+        getDocs(productsQuery)
+            .then((response) => setProductList(response.docs.map((doc) => ({ id: doc.id, ...doc.data() }))))
             .catch((error) => console.log(error))
-        }
-        
     }
 
     useEffect(() => {
         getProducts()
-
-
+        // eslint-disable-next-line
     }, [categoryId]);
 
     return (
@@ -58,4 +30,5 @@ const ItemListContainer = () => {
         </div>
     );
 };
+
 export default ItemListContainer;
