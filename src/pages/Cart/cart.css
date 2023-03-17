@@ -5,26 +5,38 @@
     align-content: space-between;
     align-items: center;
     background-color: rgba(0, 255, 255, 0.26);
-    height: 60vh;
+    height: 100% auto;
 }
 .cart1 .vacio{
     padding: 150px;
 }
 .item1{
-    padding: 20px;
-    margin-top: 5px;
-    height: 340px;
-    width: 250px;
+    display: flex;
+    padding: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 400px;
+    width: 200px;
     align-items: center;
+    background-color: rgba(240, 248, 255, 0.521);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    flex-direction: column
 }
-.item1 button{
+.item1 .quitar{
     margin-top: 5px;
     background-color: red;
     color: aliceblue;
     font-weight: bolder;
     height: 30px;
     width: 90px;
+    border-radius: 15px;
 }
+.item1 .quitar:hover {
+    background-color: rgba(255, 60, 0, 0.425);
+    cursor: pointer;
+  }
+  
 .button{
     display: flex;
     flex-direction: row;
@@ -40,8 +52,14 @@
     height: 35px;
     width: 150px;
     font-size: 15px;
-    font-weight: bold
+    font-weight: bold;
+    border-radius: 15px;
 }
+.button button:hover {
+    background-color: rgba(0, 0, 255, 0.452);
+    cursor: pointer;
+  }
+  
 .button span{
     color: rgb(247, 13, 13);
     text-decoration: underline;
@@ -50,4 +68,5 @@
     font-style: normal;
     font-size: 20px;
     margin-right: 10px;
+    
 }
