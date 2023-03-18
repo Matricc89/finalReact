@@ -52,7 +52,7 @@ const ItemDetail = ({ detail }) => {
       <div className='detail2'>
         <h2>{detail.title}</h2>
         <h3>{detail.description}</h3>
-        <h3>Precio: {detail.price}</h3>
+        <h3>Precio: ${detail.price}</h3>
         <ItemCount count={count} setCount={setCount} />
         <AddToCartButton detail={detail} count={count} onAddToCart={handleAddToCart} />
         <button className='continuar' onClick={() => navigate('/')}>
