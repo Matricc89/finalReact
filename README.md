@@ -1,3 +1,22 @@
+![](./gift.gif)
+
+#Simulador de compra Hecho en React App
+
+Es un E-commerce de zapatos de mujer, donde podes navegar y filtrar productos, luego agregarlos al Carrito y finalizar tu compra llenando un formulario
+
+#Librerias
+
+sweetAlert
+
+#DataBase
+
+firebase
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
